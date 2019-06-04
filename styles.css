@@ -11,34 +11,41 @@ html, body {
   width: 100%;
 }
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .pattern {
   position: absolute;
-  left: 20%;
-  background: url(BG_Pattern.png) no-repeat 50% 50%;
-  z-index: -1;
-  opacity: .4;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background: url("BG_Pattern.png") no-repeat 50% 50%;
+  z-index: 10;
+  opacity: 1;
 }
 
 .nav {
   position: absolute;
   width: 100%;
   height: 80px;
+  z-index: 1;
 }
 
 .logo {
-  position: absolute;
-  left: 15px;
-  margin-top: 1rem;
-  line-height: 80px;
-  width: 70px;
+  width: 10vw;
+  height: 100%;
 }
 
 .menu {
-  position: absolute;
-  top: 0;
-  height: 80px;
   right: 120px;
-  z-index: 1;
 }
 
 .menu ul {
@@ -76,80 +83,66 @@ html, body {
   right: 20px;
 }
 
-.box-1 {
+.box-1,
+.box-2,
+.box-3 {
   position: absolute;
-  width: 60px;
-  height: 60px;
   background: none;
   border: 2px solid orange;
+  transform: rotate(50deg);
+}
+
+.box-1 {
+  width: 60px;
+  height: 60px;
   top: 10vh;
   left: 20vw;
-  z-index: -1;
-  transform: rotate(50deg);
-  opacity: 1;
 }
 
 .box-2 {
-  position: absolute;
   width: 120px;
   height: 120px;
-  background: none;
-  border: 2px solid orange;
   top: 55vh;
   left: 30vw;
-  z-index: -1;
-  transform: rotate(50deg);
 }
 
 .box-3 {
-  position: absolute;
   width: 40px;
   height: 40px;
-  background: none;
-  border: 2px solid orange;
   top: 20vh;
   left: 78%;
-  z-index: -1;
-  transform: rotate(50deg);
 }
 
 .runner img {
   width: 100%;
-  z-index: -2;
-  margin-top: -20px;
+  z-index: -5;
   opacity: 0;
-  background-size: cover;
+}
+
+.title-1,
+.title-2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  font-size: 90px;
+  font-style: italic;
+  text-transform: uppercase;
+  z-index: -1;
+  opacity: 0;
 }
 
 .title-2 {
-  position: absolute;
   top: 40vh;
   left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: sans-serif;
-  font-size: 90px;
   color: rgba(0, 0, 0, 0);
-  font-style: italic;
-  text-transform: uppercase;
-  z-index: -1;
   -webkit-text-stroke: 2px orange;
   letter-spacing: -.3rem;
-  opacity: 0;
 }
 
 .title-1 {
-  position: absolute;
   top: 30vh;
   left: 20%;
-  transform: translate(-50%, -50%);
-  font-family: sans-serif;
-  font-size: 90px;
   color: orange;
-  font-style: italic;
-  text-transform: uppercase;
-  z-index: -1;
-  -webkit-text-stroke: 2px orange;
-  opacity: 0;
 }
 
 .content {
@@ -170,26 +163,21 @@ mark {
   color: orange;
 }
 */
-.call-to-action {
-  display: inline;
-  width: auto;
-}
-
-button {
+.call-to-action button {
   display: inline;
   margin-top: 6px;
   background: orange;
-  color: white;
-  padding: 20px 30px;
-  text-transform: uppercase;
+  padding: 15px;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 1rem;
-  border: none;
+  font-size: 1.5rem;
+  color: white;
   transition: .2s;
+  border: none;
+  outline: none;
 }
 
-button:hover {
+.call-to-action button:hover {
   background: teal;
   cursor: pointer;
 }
@@ -197,7 +185,6 @@ button:hover {
 .media {
   position: fixed;
   bottom: 0;
-  margin-left: 15px;
 }
 
 .media ul {
@@ -232,13 +219,9 @@ button:hover {
 
   .title-2 {
     left: 50%;
-    z-index: 1;
   }
 
-  .menu {
-    display: none;
-  }
-
+  .menu,
   .content p {
     display: none;
   }
