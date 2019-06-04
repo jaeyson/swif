@@ -27,6 +27,7 @@ html, body {
 
 .logo {
   position: absolute;
+  left: 15px;
   font-size: 18px;
   margin: .2em 2em;
   line-height: 80px;
@@ -34,8 +35,10 @@ html, body {
 
 .menu {
   position: absolute;
+  top: 0;
   height: 80px;
   right: 120px;
+  z-index: 1;
 }
 
 .menu ul {
@@ -45,8 +48,24 @@ html, body {
 .menu ul li {
   display: inline-block;
   margin: 1em 0;
-  padding: 0 30px;
   font-size: 15px;
+  margin: 5px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: .2s;
+  padding: 10px;
+  margin: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+.menu a:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
 }
 
 .cart {
@@ -94,7 +113,7 @@ html, body {
 
 .runner img {
   width: 100%;
-  z-index: 2;
+  z-index: -2;
   margin-top: -20px;
   opacity: 0;
 }
@@ -151,13 +170,18 @@ button {
   font-weight: bold;
   font-size: 1rem;
   border: none;
+  transition: .2s;
+}
+
+button:hover {
+  background: teal;
+  cursor: pointer;
 }
 
 .media {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  bottom: 0;
   margin-left: 15px;
-  border: 1px solid orange;
 }
 
 .media ul {
