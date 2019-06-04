@@ -28,9 +28,9 @@ html, body {
 .logo {
   position: absolute;
   left: 15px;
-  font-size: 18px;
-  margin: .2em 2em;
+  margin-top: 1rem;
   line-height: 80px;
+  width: 70px;
 }
 
 .menu {
@@ -93,7 +93,8 @@ html, body {
   position: absolute;
   width: 120px;
   height: 120px;
-  background: orange;
+  background: none;
+  border: 2px solid orange;
   top: 55vh;
   left: 30vw;
   z-index: -1;
@@ -104,8 +105,9 @@ html, body {
   position: absolute;
   width: 40px;
   height: 40px;
-  background: orange;
-  top: 55vh;
+  background: none;
+  border: 2px solid orange;
+  top: 20vh;
   left: 78%;
   z-index: -1;
   transform: rotate(50deg);
@@ -116,6 +118,7 @@ html, body {
   z-index: -2;
   margin-top: -20px;
   opacity: 0;
+  background-size: cover;
 }
 
 .title-2 {
@@ -151,16 +154,29 @@ html, body {
 
 .content {
   position: absolute;
-  top: 64vh;
+  top: 50vh;
   left: 57%;
-  width: 36%;
+  width: 30%;
   color: grey;
+  padding-left: 3%;
   font-weight: lighter;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+/*
+mark {
+  background: none;
+  padding: 5px 0;
+  color: orange;
+}
+*/
+.call-to-action {
+  display: inline;
+  width: auto;
 }
 
 button {
+  display: inline;
   margin-top: 6px;
   background: orange;
   color: white;

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home &middot; Fast Everything</title>
+  <title>Swif &middot; Fast Everything</title>
   <link rel="stylesheet" href="styles.css">
   <script src="TweenMax.min.js"></script>
 </head>
@@ -14,9 +14,7 @@
       
     </div>
     <div class="nav">
-      <div class="logo">
-        logo
-      </div>
+      <img class="logo" src="swif-logo.svg" alt="">
 
       <div class="menu">
         <ul>
@@ -41,9 +39,12 @@
       <div class="title-1">Fast</div>
 
       <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque soluta ab consectetur odit, praesentium, expedita, accusantium doloribus est similique commodi consequatur asperiores reprehenderit necessitatibus accusamus eligendi, sit facere quos labore! Velit iusto iste aperiam nemo fuga culpa fugit est, accusantium.</p>
+        <p>Let's cut the chase. We deliver your<br>goods right to your door faster than<br>Amazon.</p>
 
-        <button>Shop Now</button>
+        <div class="call-to-action">
+          Sounds bullsh!t?
+          <button>Try Us</button>
+        </div>
       </div>
 
       <div class="media">
@@ -138,7 +139,7 @@
       ease: Expo.easeInOut
     });
 
-    TweenMax.from(".content button", 1, {
+    TweenMax.from(".call-to-action", 1, {
       delay: 1.75,
       y: 20,
       opacity: 0,
