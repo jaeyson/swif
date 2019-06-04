@@ -25,12 +25,12 @@ TweenMax.to(".title-2", 1, {
   ease: Expo.easeInOut
 });
 
-// TweenMax.to(".pattern", 1, {
-//   delay: .5,
-//   x: 30,
-//   opacity: .4,
-//   ease: Expo.easeInOut
-// });
+TweenMax.to(".pattern", 1, {
+  delay: .5,
+  x: 30,
+  opacity: .4,
+  ease: Expo.easeInOut
+});
 
 TweenMax.from(".box-3", 2, {
   delay: .2,
