@@ -86,3 +86,21 @@ TweenMax.staggerFrom(".media ul li", 1, {
   opacity: 0,
   ease: Expo.easeInOut
 }, .1);
+
+$(document).ready(function() {
+  $(".toggle").click(function() {
+    $("#nav-ul-mobile").css("display", "flex");
+    $(".close").show();
+  });
+
+  $(".close").click(function() {
+    $("#nav-ul-mobile").hide();
+    $(".close").hide();
+  });
+
+  $(".nav-link-mobile").click(function () {
+    $("#nav-ul-mobile").hide();
+    $(".close").hide();
+  });
+});
+  
