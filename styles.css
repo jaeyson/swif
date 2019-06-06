@@ -49,12 +49,9 @@ html, body {
 }
 
 /*mobile menu*/
-.mobile-menu {
-  display: none;
-}
 
 #nav-ul-mobile {
-  display: flex;
+  display: none;
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -86,12 +83,11 @@ html, body {
 }
 
 .toggle {
-  display: block;
+  display: none;
   background: transparent;
   border: none;
   cursor: pointer;
 }
-/*end mobile menu*/
 
 .close {
   display: none;
@@ -103,6 +99,7 @@ html, body {
   right: 3%;
   cursor: pointer;
 }
+/*end mobile menu*/
 
 
 .menu ul {
@@ -396,6 +393,10 @@ mark {
   .logo {
     width: 15vw;
     height: 100%;
+  }
+
+  .toggle {
+    display: inherit;
   }
 
   .nav {
